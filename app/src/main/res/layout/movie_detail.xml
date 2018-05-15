@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/divider"
+            android:contentDescription="@string/divider_description"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="#FFFFFF"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_big_poster"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_release_date_caption"
+            style="@style/DetailCaptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/release_date"/>
+        <TextView
+            style="@style/DetailInfo"
+            android:id="@+id/tv_movie_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/divider"
+            tools:text="3-12-87"/>
+        <TextView
+            style="@style/DetailCaptions"
+            android:id="@+id/tv_vote_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_movie_release_date"
+            android:text="@string/vote_avg"/>
+        <TextView
+            style="@style/DetailInfo"
+            android:id="@+id/tv_movie_vote_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/divider"
+            app:layout_constraintBottom_toTopOf="@id/tv_movie_release_date"
+            tools:text="3.2"
+            />
+
+        <TextView
+            style="@style/DetailInfo"
+            android:id="@+id/tv_movie_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_movie_vote_average"
+            tools:text="This is the summary of the things that are in the movie and are in the movie and the movie is about these things and if the movie is about Wonder Woman then it talks about e.g. Themiscyra"/>
+
+
+
+        <TextView
+            style="@style/DetailCaptions"
+            android:textSize="32sp"
+            android:id="@+id/tv_movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            tools:text="No title yet"
+            app:layout_constraintLeft_toRightOf="@id/divider"
+            app:layout_constraintBottom_toTopOf="@id/tv_movie_summary" />
+
+        <ImageView
+            android:id="@+id/iv_big_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/poster_description"
+            android:scaleType="fitStart"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_movie_title"
+            app:srcCompat="@drawable/no_image"
+            tools:src="@drawable/no_image" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MoviesApp</string>
+    <string name="poster_description">Movie Poster</string>
+    <string name="divider_description">Dividing line</string>
+    <string name="sort_popular">Sort by popularity</string>
+    <string name="sort_rating">Sort by user rating</string>
+
+    <string name="error_internet">Unable to retrieve movie data. Please check your Internet connection and choose a sorting method to retry</string>
+    <string name="error_detail">Unable to load movie data. Please go back and retry</string>
+
+    <string name="release_date">Release Date</string>
+    <string name="vote_avg">Average of user ratings</string>
+    <string name="out_of_stars"> out of 10</string>
+
+</resources>
